@@ -33,7 +33,7 @@
     width: 25px;
     height: 25px;
     padding: 5px;
-    display: inline;
+    text-align: center;
 }
 .available {
     background-color: #20c997;
