@@ -116,15 +116,3 @@ function modify() {
     }
     load();
 }
-(function () {
-    let date = new Date();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();
-    if (month == 12 && day == 13) {
-        setStyle("html", "-webkit-filter", "grayscale(100%)");
-        setStyle("html", "-moz-filter", "grayscale(100%)");
-        setStyle("html", "-ms-filter", "grayscale(100%)");
-        setStyle("html", "-o-filter", "grayscale(100%)");
-        setStyle("html", "filter", "grayscale(100%)");
-    }
-})();
