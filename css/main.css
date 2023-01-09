@@ -9,13 +9,18 @@
 .button-area {
     display: flex;
 }
+.settings {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 3px 0px;
+}
 .lucky {
     display: inline;
     border-bottom: 2px solid #228be6;
 }
 .button {
     background-color: #ff69b4;
-    color: #ffffff;
+    color: white;
     padding: 10px;
     border-radius: 20px;
     border: none;
