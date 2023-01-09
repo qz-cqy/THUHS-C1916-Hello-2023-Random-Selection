@@ -25,7 +25,6 @@ function load() {
         let n = arr.length;
         for(let i = 0; i < n; i++) {
             html += `<div class="student ${vis[i] ? "unavailable" : "available"}">${arr[i]}(${weight[i]})</div>`;
-            if(i % 10 == 9 && i != n - 1) html += `<br>`;
         }
         document.getElementById('show-weight').innerHTML = html;
     }
