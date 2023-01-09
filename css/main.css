@@ -30,6 +30,8 @@
     display: block;
 }
 .student {
+    width: 25px;
+    height: 25px;
     padding: 5px;
     display: inline;
 }
@@ -38,4 +40,7 @@
 }
 .unavailable {
     background-color: #ff6b6b;
+}
+.no-border {
+    border: none;
 }

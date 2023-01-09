@@ -23,9 +23,13 @@ function load() {
     else {
         let html = '';
         let n = arr.length;
+        html += `<table class='no-border'>`;
         for(let i = 0; i < n; i++) {
-            html += `<div class="student ${vis[i] ? "unavailable" : "available"}">${arr[i]}(${weight[i]})</div>`;
+            if(i % 10 == 0) html += `<tr class='no-border'>`;
+            html += `<td class="student ${vis[i] ? "unavailable" : "available"}">${arr[i]}(${weight[i]})</td>`;
+            if(i % 10 == 9 || i == n - 1) html += `</tr>`;
         }
+        html += `</table>`
         document.getElementById('show-weight').innerHTML = html;
     }
 }
