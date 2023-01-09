@@ -57,6 +57,9 @@ function init() {
         document.getElementById('result-init').innerHTML = html;
         load();
     }
+    setTimeout(function () {
+        document.getElementById('result-init').innerHTML = '';
+    }, 2000);
 }
 function generate() {
     let tmp = new Array();
