@@ -1,0 +1,36 @@
+.display-area {
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    font-family: 楷体;
+    font-size: larger;
+}
+.button-area {
+    display: flex;
+}
+.lucky {
+    display: inline;
+    border-bottom: 2px solid #228be6;
+}
+.button {
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.middle {
+    margin: 0px auto;
+    display: block;
+}
+.student {
+    padding: 5px;
+    display: inline;
+}
+.available {
+    background-color: #20c997;
+}
+.unavailable {
+    background-color: #ff6b6b;
+}

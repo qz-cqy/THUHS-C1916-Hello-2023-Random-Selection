@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello 2023!</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script language=javascript src="./script/main.js"></script>
+    <script>load();</script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="display-area" class="display-area">请先设置学号范围然后进行随机抽取。</div>
+        <div id="button-area" class="button-area">
+            <button id="regenerate" onclick="generate()" class="button middle">随机抽取</button>
+            <button id="mark" onclick="mark()" class="button middle">标记已用</button>
+        </div>
+        <div id="init-area" class="settings">
+            <input type="text" id="range-minimum" placeholder="学号最小值">
+            <input type="text" id="range-maximum" placeholder="学号最大值">
+            <button id="init" onclick="init()" class="button">设置学号范围</button>
+            <div id="result-init"></div>
+        </div>
+        <div id="modify-weight" class="settings">
+            <input type="text" id="student-id" placeholder="学号">
+            <input type="text" id="available" placeholder="允许抽号（是 1 / 否 0）">
+            <input type="text" id="new-weight" placeholder="随机权重（0~10，改为 0 即不抽取）">
+            <button id="modify" onclick="modify()" class="button">更改随机权重</button>
+            <div id="show-weight"></div>
+        </div>
+    </div>
+</body>
+
+</html>
